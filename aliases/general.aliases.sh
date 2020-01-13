@@ -28,3 +28,9 @@ alias show_options='shopt'                  # Show_options: display bash options
 alias fix_stty='stty sane'                  # fix_stty:     Restore terminal settings when screwed up
 alias cic='set completion-ignore-case On'   # cic:          Make tab-completion case-insensitive
 alias src='source ~/.bashrc'                # src:          Reload .bashrc file
+# Docker aliases
+
+alias docker_prune_images='sudo docker image prune -a'
+alias docker_prune_container='sudo docker container prune'
+alias docker_container_list='sudo docker container ls -a'
+alias docker_container_remove='docker container rm $(docker container ls -aq)'
